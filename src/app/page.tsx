@@ -144,8 +144,8 @@ const Hero = () => {
                 <p className="text-[#94A3B8] text-sm font-medium mb-1">Total Balance</p>
                 <h3 className="text-4xl font-bold text-white tracking-tight">₹28,950</h3>
               </div>
-              <div className="w-14 h-14 rounded-full border-2 border-white/10 overflow-hidden shadow-md">
-                <img src="/avatar.jpg" alt="Avatar" className="w-full h-full object-cover" />
+              <div className="w-14 h-14 rounded-full border-2 border-white/10 overflow-hidden shadow-md bg-white/10 flex items-center justify-center">
+                <span className="text-white font-bold">YG</span>
               </div>
             </div>
 
