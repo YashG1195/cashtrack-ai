@@ -125,9 +125,9 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     if (typeof window === "undefined") return;
 
-    const savedTheme = localStorage.getItem("moneyflow_theme") as Theme | null;
-    const savedAccent = localStorage.getItem("moneyflow_accent") as AccentColor | null;
-    const savedCurrency = localStorage.getItem("moneyflow_currency");
+    const savedTheme = localStorage.getItem("cashtrack_theme") as Theme | null;
+    const savedAccent = localStorage.getItem("cashtrack_accent") as AccentColor | null;
+    const savedCurrency = localStorage.getItem("cashtrack_currency");
 
     const activeTheme = savedTheme || "dark";
     const activeAccent = savedAccent || "purple";
@@ -212,9 +212,9 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 
     // Save to local storage fallbacks
     if (typeof window !== "undefined") {
-      localStorage.setItem("moneyflow_theme", nextTheme);
-      localStorage.setItem("moneyflow_accent", nextAccent);
-      localStorage.setItem("moneyflow_currency", nextCurrency);
+      localStorage.setItem("cashtrack_theme", nextTheme);
+      localStorage.setItem("cashtrack_accent", nextAccent);
+      localStorage.setItem("cashtrack_currency", nextCurrency);
     }
 
     // Save to repository (Firestore / LocalStorage)

@@ -58,7 +58,7 @@ export default function LaunchChecklist() {
           </div>
           <h1 className="text-3xl font-bold tracking-tight">Production Launch Readiness</h1>
           <p className="text-neutral-500 dark:text-neutral-400 max-w-2xl text-sm leading-relaxed">
-            Review the status of critical infrastructure, security rules, and performance optimizations before deploying MoneyFlow AI to production.
+            Review the status of critical infrastructure, security rules, and performance optimizations before deploying Cashtrack AI to production.
           </p>
         </div>
 

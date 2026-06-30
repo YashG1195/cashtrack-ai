@@ -13,7 +13,7 @@ export interface SavingsGoal {
   createdAt?: Date;
 }
 
-const LOCAL_STORAGE_KEY = "moneyflow_savings";
+const LOCAL_STORAGE_KEY = "cashtrack_savings";
 
 export class GoalRepository {
   private static initLocalStorageMock(): SavingsGoal[] {

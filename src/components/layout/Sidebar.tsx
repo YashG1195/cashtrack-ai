@@ -49,7 +49,7 @@ export default function Sidebar({ collapsed, setCollapsed, mobileOpen, setMobile
         {!collapsed && (
           <Link href="/dashboard" className="flex items-center gap-2 font-bold text-lg tracking-tight bg-gradient-to-r from-neutral-950 via-neutral-800 to-amber-600 dark:from-white dark:via-neutral-200 dark:to-amber-400 bg-clip-text text-transparent">
             <Sparkles className="w-5 h-5 text-amber-500 fill-amber-500/20" />
-            <span>MoneyFlow AI</span>
+            <span>Cashtrack AI</span>
           </Link>
         )}
         {collapsed && (

@@ -1,6 +1,6 @@
 {
-  "name": "MoneyFlow AI",
-  "short_name": "MoneyFlow",
+  "name": "Cashtrack AI",
+  "short_name": "Cashtrack",
   "description": "Your intelligent financial companion for budgeting, tracking, and insights.",
   "start_url": "/dashboard",
   "display": "standalone",

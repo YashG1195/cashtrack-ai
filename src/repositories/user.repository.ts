@@ -2,7 +2,7 @@ import { isFirebaseConfigured } from "@/lib/firebase";
 import { UsersService } from "@/services/firestore/users.service";
 import { User } from "@/models/types";
 
-const LOCAL_STORAGE_KEY = "moneyflow_user";
+const LOCAL_STORAGE_KEY = "cashtrack_user";
 
 export class UserRepository {
   private static getDemoUser(): User {

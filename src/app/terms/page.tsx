@@ -12,7 +12,7 @@ const Navbar = () => (
         <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#FBBF24] to-[#D97706] flex items-center justify-center shadow-lg shadow-[#FBBF24]/20">
           <Sparkles className="w-4 h-4 text-white" />
         </div>
-        <span className="text-white">MoneyFlow AI</span>
+        <span className="text-white">Cashtrack AI</span>
       </Link>
       <div className="flex items-center gap-4">
         <Link href="/login" className="text-sm font-medium text-white hover:text-[#FBBF24] transition-colors">
@@ -29,7 +29,7 @@ const Navbar = () => (
 const Footer = () => (
   <footer className="bg-[#050816] border-t border-white/10 pt-10 pb-10 mt-auto">
     <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
-      <p className="text-[#94A3B8] text-sm">© {new Date().getFullYear()} MoneyFlow AI. All rights reserved.</p>
+      <p className="text-[#94A3B8] text-sm">© {new Date().getFullYear()} Cashtrack AI. All rights reserved.</p>
       <div className="flex items-center gap-6 text-[#94A3B8]">
         <Link href="/privacy" className="hover:text-white transition-colors">Privacy</Link>
         <Link href="/terms" className="text-white">Terms</Link>
@@ -58,7 +58,7 @@ export default function TermsPage() {
             <section>
               <h2 className="text-xl font-bold text-white mb-3">1. Agreement to Terms</h2>
               <p>
-                These Terms of Service constitute a legally binding agreement made between you and MoneyFlow AI concerning your access to and use of the application as well as any other media form, mobile application, or website related thereto. You agree that by accessing the site, you have read, understood, and agreed to be bound by all of these Terms of Service.
+                These Terms of Service constitute a legally binding agreement made between you and Cashtrack AI concerning your access to and use of the application as well as any other media form, mobile application, or website related thereto. You agree that by accessing the site, you have read, understood, and agreed to be bound by all of these Terms of Service.
               </p>
             </section>
 
@@ -72,7 +72,7 @@ export default function TermsPage() {
             <section>
               <h2 className="text-xl font-bold text-white mb-3">3. AI Insights Disclaimer</h2>
               <p>
-                MoneyFlow AI uses generative AI to provide automated financial insights, budgeting recommendations, and savings goals tracking. <strong>This information is provided for educational and informational purposes only and does not constitute professional financial advice.</strong> You should always consult with a certified financial planner before making major financial decisions. We are not liable for any financial losses resulting from the use of our AI suggestions.
+                Cashtrack AI uses generative AI to provide automated financial insights, budgeting recommendations, and savings goals tracking. <strong>This information is provided for educational and informational purposes only and does not constitute professional financial advice.</strong> You should always consult with a certified financial planner before making major financial decisions. We are not liable for any financial losses resulting from the use of our AI suggestions.
               </p>
             </section>
 
@@ -93,7 +93,7 @@ export default function TermsPage() {
             <section>
               <h2 className="text-xl font-bold text-white mb-3">6. Governing Law</h2>
               <p>
-                These Terms shall be governed by and defined following the laws of your jurisdiction. MoneyFlow AI and yourself irrevocably consent that the courts of your jurisdiction shall have exclusive jurisdiction to resolve any dispute which may arise in connection with these terms.
+                These Terms shall be governed by and defined following the laws of your jurisdiction. Cashtrack AI and yourself irrevocably consent that the courts of your jurisdiction shall have exclusive jurisdiction to resolve any dispute which may arise in connection with these terms.
               </p>
             </section>
           </div>

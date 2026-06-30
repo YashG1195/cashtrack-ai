@@ -22,7 +22,7 @@ async function testNotifications() {
   console.log("Running notifications system tests...");
 
   // Clear mock storage
-  delete mockStorage["moneyflow_notifications"];
+  delete mockStorage["cashtrack_notifications"];
 
   // Test Case 1: Pre-populate mock notifications on list
   const list = await NotificationRepository.list("test-user-id");

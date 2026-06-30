@@ -1,7 +1,7 @@
 import { isFirebaseConfigured } from "@/lib/firebase";
 import { AIChatsService, AIChatMessage } from "@/services/firestore/aiChats.service";
 
-const LOCAL_STORAGE_KEY = "moneyflow_ai_chats";
+const LOCAL_STORAGE_KEY = "cashtrack_ai_chats";
 
 export class AIChatRepository {
   private static initLocalStorageMock(): AIChatMessage[] {
@@ -24,7 +24,7 @@ export class AIChatRepository {
       { 
         userId: "demo-user",
         role: "assistant", 
-        message: "### Welcome to your MoneyFlow AI Advisor!\n\nI have access to your budgets, saving goals, and transaction log context.\n\nAsk me anything, or try one of the suggestions below:",
+        message: "### Welcome to your Cashtrack AI Advisor!\n\nI have access to your budgets, saving goals, and transaction log context.\n\nAsk me anything, or try one of the suggestions below:",
         timestamp: new Date()
       }
     ];
@@ -62,7 +62,7 @@ export class AIChatRepository {
       { 
         userId: "demo-user",
         role: "assistant", 
-        message: "### Welcome to your MoneyFlow AI Advisor!\n\nI have access to your budgets, saving goals, and transaction log context.\n\nAsk me anything, or try one of the suggestions below:",
+        message: "### Welcome to your Cashtrack AI Advisor!\n\nI have access to your budgets, saving goals, and transaction log context.\n\nAsk me anything, or try one of the suggestions below:",
         timestamp: new Date()
       }
     ];

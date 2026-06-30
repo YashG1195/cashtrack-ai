@@ -37,7 +37,7 @@ const Navbar = () => {
           <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#FBBF24] to-[#D97706] flex items-center justify-center shadow-lg shadow-[#FBBF24]/20">
             <Sparkles className="w-4 h-4 text-white" />
           </div>
-          <span className="text-white">MoneyFlow AI</span>
+          <span className="text-white">Cashtrack AI</span>
         </Link>
         
         <nav className="hidden md:flex items-center gap-8">
@@ -233,7 +233,7 @@ const Features = () => {
   const features = [
     { icon: PieChart, title: "Expense Tracking", desc: "Log and categorize transactions effortlessly. Visualize your spending patterns with stunning, interactive charts." },
     { icon: Target, title: "Budget Management", desc: "Set granular monthly limits across different categories and receive proactive alerts before you overspend." },
-    { icon: Star, title: "Savings Goals", desc: "Define financial milestones. MoneyFlow AI automatically tracks your progress and suggests optimal contribution rates." },
+    { icon: Star, title: "Savings Goals", desc: "Define financial milestones. Cashtrack AI automatically tracks your progress and suggests optimal contribution rates." },
     { icon: Brain, title: "AI Financial Advisor", desc: "Chat directly with a personalized AI that understands your cash flow and provides actionable wealth-building advice." },
     { icon: BarChart3, title: "Advanced Analytics", desc: "Generate comprehensive monthly reports detailing your net worth trajectory, income ratios, and spending anomalies." },
     { icon: Lock, title: "Secure Authentication", desc: "Enterprise-grade security using Firebase Authentication. Your financial data is encrypted and strictly private." }
@@ -281,7 +281,7 @@ const ProductShowcase = () => {
       
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">See MoneyFlow AI In Action</h2>
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">See Cashtrack AI In Action</h2>
           <p className="text-lg text-[#94A3B8] max-w-2xl mx-auto">Experience a beautifully crafted interface that makes managing money not just easy, but enjoyable.</p>
         </div>
 
@@ -385,7 +385,7 @@ const AiAdvisorSection = () => {
               <Sparkles className="w-5 h-5 text-white" />
             </div>
             <div>
-              <h3 className="text-white font-bold">MoneyFlow AI Advisor</h3>
+              <h3 className="text-white font-bold">Cashtrack AI Advisor</h3>
               <p className="text-xs text-[#10B981] flex items-center gap-1"><span className="w-1.5 h-1.5 bg-[#10B981] rounded-full inline-block" /> Online</p>
             </div>
           </div>
@@ -452,11 +452,11 @@ const AiAdvisorSection = () => {
 
 const Testimonials = () => {
   const reviews = [
-    { name: "Sarah Jenkins", role: "Software Engineer", content: "MoneyFlow AI completely changed how I look at my salary. The AI insights caught a leaky subscription I hadn't noticed in months." },
+    { name: "Sarah Jenkins", role: "Software Engineer", content: "Cashtrack AI completely changed how I look at my salary. The AI insights caught a leaky subscription I hadn't noticed in months." },
     { name: "David Chen", role: "Freelance Designer", content: "Finally, a finance app that looks as good as the designs I create. The budgeting tools are incredibly intuitive and robust." },
     { name: "Priya Sharma", role: "Marketing Director", content: "I achieved my savings goal for a European vacation 3 months early thanks to the automated suggestions from the AI advisor." },
     { name: "Michael Ross", role: "Product Manager", content: "The level of clarity this dashboard provides is unmatched. It feels like having a CFO in my pocket." },
-    { name: "Elena Rodriguez", role: "Entrepreneur", content: "Switching from messy spreadsheets to MoneyFlow AI was the best decision for my personal finances this year." },
+    { name: "Elena Rodriguez", role: "Entrepreneur", content: "Switching from messy spreadsheets to Cashtrack AI was the best decision for my personal finances this year." },
     { name: "James Wilson", role: "Doctor", content: "Clean, secure, and incredibly smart. The dashboard alone is worth paying for, let alone the generative AI features." },
   ];
 
@@ -568,7 +568,7 @@ const Footer = () => {
               <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#FBBF24] to-[#D97706] flex items-center justify-center">
                 <Sparkles className="w-4 h-4 text-white" />
               </div>
-              <span className="text-white">MoneyFlow AI</span>
+              <span className="text-white">Cashtrack AI</span>
             </Link>
             <p className="text-[#94A3B8] text-sm max-w-xs leading-relaxed">
               The premier AI-powered financial command center designed for modern wealth builders and ambitious professionals.
@@ -603,7 +603,7 @@ const Footer = () => {
         </div>
 
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-[#94A3B8] text-sm">© {new Date().getFullYear()} MoneyFlow AI. All rights reserved.</p>
+          <p className="text-[#94A3B8] text-sm">© {new Date().getFullYear()} Cashtrack AI. All rights reserved.</p>
 
         </div>
       </div>

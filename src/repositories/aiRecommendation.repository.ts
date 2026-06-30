@@ -1,7 +1,7 @@
 import { isFirebaseConfigured } from "@/lib/firebase";
 import { AIRecommendationsService, AIRecommendation } from "@/services/firestore/aiRecommendations.service";
 
-const LOCAL_STORAGE_KEY = "moneyflow_ai_recommendations";
+const LOCAL_STORAGE_KEY = "cashtrack_ai_recommendations";
 
 export class AIRecommendationRepository {
   private static initLocalStorageMock(): AIRecommendation[] {

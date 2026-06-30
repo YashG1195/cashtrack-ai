@@ -23,7 +23,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "MoneyFlow AI - Smart Personal Finance Tracker",
+  title: "Cashtrack AI - Smart Personal Finance Tracker",
   description: "Track your income, expenses, budgets, and savings goals while receiving intelligent AI financial insights. Dark mode first, Linear-inspired design.",
   manifest: "/manifest.json",
   icons: {
@@ -32,14 +32,14 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://moneyflow-ai.vercel.app",
-    title: "MoneyFlow AI - Smart Personal Finance",
+    url: "https://cashtrack-ai.vercel.app",
+    title: "Cashtrack AI - Smart Personal Finance",
     description: "Your intelligent financial companion for budgeting, tracking, and insights.",
-    siteName: "MoneyFlow AI",
+    siteName: "Cashtrack AI",
   },
   twitter: {
     card: "summary_large_image",
-    title: "MoneyFlow AI - Smart Personal Finance",
+    title: "Cashtrack AI - Smart Personal Finance",
     description: "Your intelligent financial companion for budgeting, tracking, and insights.",
   },
 };

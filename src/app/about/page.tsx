@@ -12,7 +12,7 @@ const Navbar = () => (
         <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#FBBF24] to-[#D97706] flex items-center justify-center shadow-lg shadow-[#FBBF24]/20">
           <Sparkles className="w-4 h-4 text-white" />
         </div>
-        <span className="text-white">MoneyFlow AI</span>
+        <span className="text-white">Cashtrack AI</span>
       </Link>
       <div className="flex items-center gap-4">
         <Link href="/login" className="text-sm font-medium text-white hover:text-[#FBBF24] transition-colors">
@@ -29,7 +29,7 @@ const Navbar = () => (
 const Footer = () => (
   <footer className="bg-[#050816] border-t border-white/10 pt-10 pb-10 mt-auto">
     <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
-      <p className="text-[#94A3B8] text-sm">© {new Date().getFullYear()} MoneyFlow AI. All rights reserved.</p>
+      <p className="text-[#94A3B8] text-sm">© {new Date().getFullYear()} Cashtrack AI. All rights reserved.</p>
       <div className="flex items-center gap-6 text-[#94A3B8]">
         <Link href="/privacy" className="hover:text-white transition-colors">Privacy</Link>
         <Link href="/terms" className="hover:text-white transition-colors">Terms</Link>
@@ -55,22 +55,22 @@ export default function AboutPage() {
             <Sparkles className="w-3.5 h-3.5" />
             <span>Our Story</span>
           </div>
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">About MoneyFlow AI</h1>
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">About Cashtrack AI</h1>
           <p className="text-lg text-[#94A3B8] leading-relaxed max-w-2xl mx-auto">
             We are building the intelligent financial command center for modern professionals, combining intuitive design with powerful generative AI.
           </p>
         </motion.div>
 
-        {/* What is MoneyFlow AI */}
+        {/* What is Cashtrack AI */}
         <div className="bg-[#111827]/40 border border-white/5 rounded-3xl p-8 md:p-12 mb-8 backdrop-blur-sm">
           <h2 className="text-2xl font-bold mb-4 flex items-center gap-3">
             <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#FBBF24] to-[#D97706] flex items-center justify-center">
               <Activity className="w-5 h-5 text-white" />
             </div>
-            What is MoneyFlow AI?
+            What is Cashtrack AI?
           </h2>
           <p className="text-[#94A3B8] leading-relaxed text-lg">
-            MoneyFlow AI is a premium SaaS platform designed to replace messy spreadsheets and fragmented banking apps. By aggregating your cash flow into beautifully designed, actionable dashboards, we empower you to track expenses, set granular budgets, and establish powerful savings goals—all monitored and analyzed by your personal 24/7 AI financial advisor.
+            Cashtrack AI is a premium SaaS platform designed to replace messy spreadsheets and fragmented banking apps. By aggregating your cash flow into beautifully designed, actionable dashboards, we empower you to track expenses, set granular budgets, and establish powerful savings goals—all monitored and analyzed by your personal 24/7 AI financial advisor.
           </p>
         </div>
 

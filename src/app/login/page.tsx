@@ -80,7 +80,7 @@ export default function LoginPage() {
           <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#FBBF24] to-[#D97706] flex items-center justify-center shadow-lg shadow-[#FBBF24]/25 group-hover:scale-105 transition-transform">
             <Sparkles className="w-6 h-6 text-white" />
           </div>
-          <span>MoneyFlow AI</span>
+          <span>Cashtrack AI</span>
         </Link>
 
         {/* Hero Content */}
@@ -125,7 +125,7 @@ export default function LoginPage() {
           <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#FBBF24] to-[#D97706] flex items-center justify-center shadow-lg shadow-[#FBBF24]/25">
             <Sparkles className="w-6 h-6 text-white" />
           </div>
-          <span>MoneyFlow AI</span>
+          <span>Cashtrack AI</span>
         </Link>
 
         {/* Auth Card */}

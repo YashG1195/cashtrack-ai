@@ -2,7 +2,7 @@ import { isFirebaseConfigured } from "@/lib/firebase";
 import { AIInsightsService } from "@/services/firestore/aiInsights.service";
 import { AIInsight } from "@/models/types";
 
-const LOCAL_STORAGE_KEY = "moneyflow_ai_insights";
+const LOCAL_STORAGE_KEY = "cashtrack_ai_insights";
 
 export class AIInsightRepository {
   private static initLocalStorageMock(): AIInsight[] {

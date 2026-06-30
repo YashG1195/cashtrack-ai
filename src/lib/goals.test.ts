@@ -22,7 +22,7 @@ async function testGoalsThemeColor() {
   console.log("Running goals theme color tests...");
 
   // Clear mock storage
-  delete mockStorage["moneyflow_savings"];
+  delete mockStorage["cashtrack_savings"];
 
   // Test Case 1: Default fallback to purple
   const goal1 = await GoalRepository.add("test-user", {

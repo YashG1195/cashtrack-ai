@@ -12,7 +12,7 @@ const Navbar = () => (
         <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#FBBF24] to-[#D97706] flex items-center justify-center shadow-lg shadow-[#FBBF24]/20">
           <Sparkles className="w-4 h-4 text-white" />
         </div>
-        <span className="text-white">MoneyFlow AI</span>
+        <span className="text-white">Cashtrack AI</span>
       </Link>
       <div className="flex items-center gap-4">
         <Link href="/login" className="text-sm font-medium text-white hover:text-[#FBBF24] transition-colors">
@@ -29,7 +29,7 @@ const Navbar = () => (
 const Footer = () => (
   <footer className="bg-[#050816] border-t border-white/10 pt-10 pb-10 mt-auto">
     <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
-      <p className="text-[#94A3B8] text-sm">© {new Date().getFullYear()} MoneyFlow AI. All rights reserved.</p>
+      <p className="text-[#94A3B8] text-sm">© {new Date().getFullYear()} Cashtrack AI. All rights reserved.</p>
       <div className="flex items-center gap-6 text-[#94A3B8]">
         <Link href="/privacy" className="hover:text-white transition-colors">Privacy</Link>
         <Link href="/terms" className="hover:text-white transition-colors">Terms</Link>
@@ -67,7 +67,7 @@ export default function ContactPage() {
           <div className="text-center mb-8">
             <h1 className="text-3xl font-bold tracking-tight text-white mb-2">Get in Touch</h1>
             <p className="text-[#94A3B8] text-sm">
-              Have questions about MoneyFlow AI? We're here to help. Drop us a message and we'll get back to you shortly.
+              Have questions about Cashtrack AI? We're here to help. Drop us a message and we'll get back to you shortly.
             </p>
           </div>
 

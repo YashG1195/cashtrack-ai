@@ -12,7 +12,7 @@ const Navbar = () => (
         <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#FBBF24] to-[#D97706] flex items-center justify-center shadow-lg shadow-[#FBBF24]/20">
           <Sparkles className="w-4 h-4 text-white" />
         </div>
-        <span className="text-white">MoneyFlow AI</span>
+        <span className="text-white">Cashtrack AI</span>
       </Link>
       <div className="flex items-center gap-4">
         <Link href="/login" className="text-sm font-medium text-white hover:text-[#FBBF24] transition-colors">
@@ -29,7 +29,7 @@ const Navbar = () => (
 const Footer = () => (
   <footer className="bg-[#050816] border-t border-white/10 pt-10 pb-10 mt-auto">
     <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
-      <p className="text-[#94A3B8] text-sm">© {new Date().getFullYear()} MoneyFlow AI. All rights reserved.</p>
+      <p className="text-[#94A3B8] text-sm">© {new Date().getFullYear()} Cashtrack AI. All rights reserved.</p>
       <div className="flex items-center gap-6 text-[#94A3B8]">
         <Link href="/privacy" className="text-white">Privacy</Link>
         <Link href="/terms" className="hover:text-white transition-colors">Terms</Link>
@@ -58,7 +58,7 @@ export default function PrivacyPage() {
             <section>
               <h2 className="text-xl font-bold text-white mb-3">1. Introduction</h2>
               <p>
-                At MoneyFlow AI, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our application. Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the site.
+                At Cashtrack AI, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our application. Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the site.
               </p>
             </section>
 

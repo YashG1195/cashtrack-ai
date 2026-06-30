@@ -3,7 +3,7 @@ import { GoalContributionsService } from "@/services/firestore/goal-contribution
 import { GoalContribution } from "@/models/types";
 export type { GoalContribution };
 
-const LOCAL_STORAGE_KEY = "moneyflow_goal_contributions";
+const LOCAL_STORAGE_KEY = "cashtrack_goal_contributions";
 
 export class GoalContributionRepository {
   private static initLocalStorageMock(): GoalContribution[] {

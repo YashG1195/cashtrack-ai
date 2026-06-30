@@ -4,7 +4,7 @@ import { TransactionRepository } from "./transaction.repository";
 import { BudgetRepository } from "./budget.repository";
 import { GoalRepository } from "./goal.repository";
 
-const LOCAL_STORAGE_KEY = "moneyflow_settings";
+const LOCAL_STORAGE_KEY = "cashtrack_settings";
 
 export class SettingsRepository {
   private static initLocalStorageMock(): UserSettings {
@@ -71,11 +71,11 @@ export class SettingsRepository {
     }
 
     if (typeof window !== "undefined") {
-      localStorage.removeItem("moneyflow_transactions");
-      localStorage.removeItem("moneyflow_budgets");
-      localStorage.removeItem("moneyflow_savings");
-      localStorage.removeItem("moneyflow_settings");
-      localStorage.removeItem("moneyflow_ai_insights");
+      localStorage.removeItem("cashtrack_transactions");
+      localStorage.removeItem("cashtrack_budgets");
+      localStorage.removeItem("cashtrack_savings");
+      localStorage.removeItem("cashtrack_settings");
+      localStorage.removeItem("cashtrack_ai_insights");
     }
   }
 }

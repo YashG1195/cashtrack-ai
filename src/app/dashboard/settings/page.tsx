@@ -361,7 +361,7 @@ export default function SettingsPage() {
       const url = URL.createObjectURL(blob);
       const link = document.createElement("a");
       link.href = url;
-      link.download = `moneyflow_data_export_${new Date().toISOString().slice(0,10)}.json`;
+      link.download = `cashtrack_data_export_${new Date().toISOString().slice(0,10)}.json`;
       link.click();
       URL.revokeObjectURL(url);
       triggerFeedback("Data export completed");

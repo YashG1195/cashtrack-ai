@@ -51,22 +51,22 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     if (!isFirebaseConfigured) {
       // Demo Mode Initialization
-      const mockUserStr = localStorage.getItem("moneyflow_mock_user");
+      const mockUserStr = localStorage.getItem("cashtrack_mock_user");
       if (mockUserStr) {
         try {
           const parsed = JSON.parse(mockUserStr);
           setUser(parsed as User);
-          Cookies.set("moneyflow_auth_token", "mock-demo-jwt-token", { 
+          Cookies.set("cashtrack_auth_token", "mock-demo-jwt-token", { 
             expires: 7,
             secure: false,
             sameSite: "strict"
           });
         } catch {
-          localStorage.removeItem("moneyflow_mock_user");
-          Cookies.remove("moneyflow_auth_token");
+          localStorage.removeItem("cashtrack_mock_user");
+          Cookies.remove("cashtrack_auth_token");
         }
       } else {
-        Cookies.remove("moneyflow_auth_token");
+        Cookies.remove("cashtrack_auth_token");
       }
       setLoading(false);
       return;
@@ -79,7 +79,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         if (currentUser) {
           try {
             const token = await currentUser.getIdToken();
-            Cookies.set("moneyflow_auth_token", token, { 
+            Cookies.set("cashtrack_auth_token", token, { 
               expires: 7, 
               secure: process.env.NODE_ENV === "production",
               sameSite: "strict"
@@ -110,14 +110,14 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         
         // Fallback for demo mode or if no DB user exists
         if (currentUser) {
-          const localAvatar = localStorage.getItem(`moneyflow_avatar_${currentUser.uid}`);
+          const localAvatar = localStorage.getItem(`cashtrack_avatar_${currentUser.uid}`);
           setUser({
             ...currentUser,
             photoURL: localAvatar || currentUser.photoURL
           } as unknown as User);
         } else {
           setUser(null);
-          Cookies.remove("moneyflow_auth_token");
+          Cookies.remove("cashtrack_auth_token");
         }
         setLoading(false);
       },
@@ -126,21 +126,21 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         setIsDemoMode(true);
         
         // Restore session from mock storage if it exists
-        const mockUserStr = localStorage.getItem("moneyflow_mock_user");
+        const mockUserStr = localStorage.getItem("cashtrack_mock_user");
         if (mockUserStr) {
           try {
             setUser(JSON.parse(mockUserStr) as User);
-            Cookies.set("moneyflow_auth_token", "mock-demo-jwt-token", { 
+            Cookies.set("cashtrack_auth_token", "mock-demo-jwt-token", { 
               expires: 7,
               secure: false,
               sameSite: "strict"
             });
           } catch {
-            localStorage.removeItem("moneyflow_mock_user");
-            Cookies.remove("moneyflow_auth_token");
+            localStorage.removeItem("cashtrack_mock_user");
+            Cookies.remove("cashtrack_auth_token");
           }
         } else {
-          Cookies.remove("moneyflow_auth_token");
+          Cookies.remove("cashtrack_auth_token");
         }
         setLoading(false);
       }
@@ -163,8 +163,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
           emailVerified: true
         } as unknown as User;
         
-        localStorage.setItem("moneyflow_mock_user", JSON.stringify(mockUser));
-        Cookies.set("moneyflow_auth_token", "mock-demo-jwt-token", { 
+        localStorage.setItem("cashtrack_mock_user", JSON.stringify(mockUser));
+        Cookies.set("cashtrack_auth_token", "mock-demo-jwt-token", { 
           expires: 7,
           secure: false,
           sameSite: "strict"
@@ -176,7 +176,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
       await updateProfile(userCredential.user, { displayName });
       const token = await userCredential.user.getIdToken(true);
-      Cookies.set("moneyflow_auth_token", token, { 
+      Cookies.set("cashtrack_auth_token", token, { 
         expires: 7, 
         secure: process.env.NODE_ENV === "production",
         sameSite: "strict"
@@ -194,8 +194,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
           photoURL: null,
           emailVerified: true
         } as unknown as User;
-        localStorage.setItem("moneyflow_mock_user", JSON.stringify(mockUser));
-        Cookies.set("moneyflow_auth_token", "mock-demo-jwt-token", { expires: 7 });
+        localStorage.setItem("cashtrack_mock_user", JSON.stringify(mockUser));
+        Cookies.set("cashtrack_auth_token", "mock-demo-jwt-token", { expires: 7 });
         setUser(mockUser);
         return;
       }
@@ -224,8 +224,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
           emailVerified: true
         } as unknown as User;
 
-        localStorage.setItem("moneyflow_mock_user", JSON.stringify(mockUser));
-        Cookies.set("moneyflow_auth_token", "mock-demo-jwt-token", { 
+        localStorage.setItem("cashtrack_mock_user", JSON.stringify(mockUser));
+        Cookies.set("cashtrack_auth_token", "mock-demo-jwt-token", { 
           expires: 7,
           secure: false,
           sameSite: "strict"
@@ -236,7 +236,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
       const token = await userCredential.user.getIdToken();
-      Cookies.set("moneyflow_auth_token", token, { 
+      Cookies.set("cashtrack_auth_token", token, { 
         expires: 7, 
         secure: process.env.NODE_ENV === "production",
         sameSite: "strict"
@@ -253,8 +253,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
           photoURL: null,
           emailVerified: true
         } as unknown as User;
-        localStorage.setItem("moneyflow_mock_user", JSON.stringify(mockUser));
-        Cookies.set("moneyflow_auth_token", "mock-demo-jwt-token", { expires: 7 });
+        localStorage.setItem("cashtrack_mock_user", JSON.stringify(mockUser));
+        Cookies.set("cashtrack_auth_token", "mock-demo-jwt-token", { expires: 7 });
         setUser(mockUser);
         return;
       }
@@ -283,8 +283,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
           emailVerified: true
         } as unknown as User;
 
-        localStorage.setItem("moneyflow_mock_user", JSON.stringify(mockUser));
-        Cookies.set("moneyflow_auth_token", "mock-demo-jwt-token", { 
+        localStorage.setItem("cashtrack_mock_user", JSON.stringify(mockUser));
+        Cookies.set("cashtrack_auth_token", "mock-demo-jwt-token", { 
           expires: 7,
           secure: false,
           sameSite: "strict"
@@ -295,7 +295,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
       const userCredential = await signInWithPopup(auth, googleProvider);
       const token = await userCredential.user.getIdToken();
-      Cookies.set("moneyflow_auth_token", token, { 
+      Cookies.set("cashtrack_auth_token", token, { 
         expires: 7, 
         secure: process.env.NODE_ENV === "production",
         sameSite: "strict"
@@ -312,8 +312,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
           photoURL: null,
           emailVerified: true
         } as unknown as User;
-        localStorage.setItem("moneyflow_mock_user", JSON.stringify(mockUser));
-        Cookies.set("moneyflow_auth_token", "mock-demo-jwt-token", { expires: 7 });
+        localStorage.setItem("cashtrack_mock_user", JSON.stringify(mockUser));
+        Cookies.set("cashtrack_auth_token", "mock-demo-jwt-token", { expires: 7 });
         setUser(mockUser);
         return;
       }
@@ -357,14 +357,14 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     setLoading(true);
     try {
       if (isDemoMode) {
-        localStorage.removeItem("moneyflow_mock_user");
-        Cookies.remove("moneyflow_auth_token");
+        localStorage.removeItem("cashtrack_mock_user");
+        Cookies.remove("cashtrack_auth_token");
         setUser(null);
         return;
       }
 
       await signOut(auth);
-      Cookies.remove("moneyflow_auth_token");
+      Cookies.remove("cashtrack_auth_token");
       setUser(null);
     } finally {
       setLoading(false);
@@ -373,11 +373,11 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
   const updateUserProfile = async (displayName: string, photoURL: string) => {
     if (isDemoMode) {
-      const mockUserStr = localStorage.getItem("moneyflow_mock_user");
+      const mockUserStr = localStorage.getItem("cashtrack_mock_user");
       if (mockUserStr) {
         const parsed = JSON.parse(mockUserStr);
         const updated = { ...parsed, displayName, photoURL };
-        localStorage.setItem("moneyflow_mock_user", JSON.stringify(updated));
+        localStorage.setItem("cashtrack_mock_user", JSON.stringify(updated));
         setUser(updated as User);
       }
       return;
@@ -398,9 +398,9 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
       // Cache base64 photoURL locally to persist across reloads
       if (isBase64) {
-        localStorage.setItem(`moneyflow_avatar_${auth.currentUser.uid}`, photoURL);
+        localStorage.setItem(`cashtrack_avatar_${auth.currentUser.uid}`, photoURL);
       } else if (!photoURL) {
-        localStorage.removeItem(`moneyflow_avatar_${auth.currentUser.uid}`);
+        localStorage.removeItem(`cashtrack_avatar_${auth.currentUser.uid}`);
       }
 
       setUser({

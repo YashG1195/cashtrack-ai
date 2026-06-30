@@ -35,7 +35,7 @@ export async function POST(request: NextRequest) {
     });
 
     const systemPrompt = `
-You are MoneyFlow AI, an elite SaaS financial advisor.
+You are Cashtrack AI, an elite SaaS financial advisor.
 Generate a structured, professional Monthly Financial Report Summary for the month of ${month}.
 
 User's Financial Summary:

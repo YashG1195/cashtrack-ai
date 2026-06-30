@@ -12,7 +12,7 @@ export interface Budget {
   createdAt?: Date;
 }
 
-const LOCAL_STORAGE_KEY = "moneyflow_budgets";
+const LOCAL_STORAGE_KEY = "cashtrack_budgets";
 
 export class BudgetRepository {
   private static initLocalStorageMock(): Budget[] {

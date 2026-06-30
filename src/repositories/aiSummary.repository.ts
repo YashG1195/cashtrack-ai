@@ -1,7 +1,7 @@
 import { isFirebaseConfigured } from "@/lib/firebase";
 import { AISummariesService, AISummary } from "@/services/firestore/aiSummaries.service";
 
-const LOCAL_STORAGE_KEY = "moneyflow_ai_summaries";
+const LOCAL_STORAGE_KEY = "cashtrack_ai_summaries";
 
 export class AISummaryRepository {
   private static initLocalStorageMock(): AISummary[] {

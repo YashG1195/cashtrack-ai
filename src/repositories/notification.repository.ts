@@ -12,7 +12,7 @@ export interface AppNotification {
   createdAt: Date;
 }
 
-const LOCAL_STORAGE_KEY = "moneyflow_notifications";
+const LOCAL_STORAGE_KEY = "cashtrack_notifications";
 
 export class NotificationRepository {
   private static initLocalStorageMock(userId: string): AppNotification[] {
@@ -62,7 +62,7 @@ export class NotificationRepository {
       {
         id: "n4",
         userId,
-        title: "Welcome to MoneyFlow AI",
+        title: "Welcome to Cashtrack AI",
         message: "Your personal financial dashboard is set up. Let's optimize your wealth!",
         type: "system",
         isRead: true,

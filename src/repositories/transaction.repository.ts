@@ -16,7 +16,7 @@ export interface Transaction {
   updatedAt?: Date;
 }
 
-const LOCAL_STORAGE_KEY = "moneyflow_transactions";
+const LOCAL_STORAGE_KEY = "cashtrack_transactions";
 
 export class TransactionRepository {
   private static initLocalStorageMock(): Transaction[] {

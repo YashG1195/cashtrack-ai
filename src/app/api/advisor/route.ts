@@ -57,7 +57,7 @@ Focus Savings Goal under analysis:
 
     // Prepare system instructions and financial context
     const profileContext = `
-You are MoneyFlow AI, a premium, highly intelligent personal finance advisor.
+You are Cashtrack AI, a premium, highly intelligent personal finance advisor.
 You are helping the user manage their money flow, establish smart budgets, track saving targets, and improve their financial health.
 
 The user's current financial profile is:
@@ -246,7 +246,7 @@ We recommend reviewing your active subscriptions. Deactivating even one unused u
   }
 
   // General fallback greeting response
-  return `### 👋 Hello! I am your MoneyFlow AI Advisor.
+  return `### 👋 Hello! I am your Cashtrack AI Advisor.
 
 I can help you analyze your financial health, give budgeting advice, and optimize your savings goals.
 

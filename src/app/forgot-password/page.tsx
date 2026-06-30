@@ -50,7 +50,7 @@ export default function ForgotPasswordPage() {
         <div className="flex flex-col items-center text-center mb-8">
           <Link href="/" className="flex items-center gap-2 font-bold text-xl tracking-tight bg-gradient-to-r from-neutral-950 to-amber-600 dark:from-white dark:to-amber-400 bg-clip-text text-transparent mb-3">
             <Sparkles className="w-5 h-5 text-amber-500 fill-amber-500/20" />
-            <span>MoneyFlow AI</span>
+            <span>Cashtrack AI</span>
           </Link>
           <h2 className="text-xl font-bold text-neutral-900 dark:text-white">Reset Password</h2>
           <p className="text-sm text-neutral-500 dark:text-neutral-400 mt-1">We will email you a link to reset your password</p>

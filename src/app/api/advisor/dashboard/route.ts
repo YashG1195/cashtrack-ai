@@ -42,7 +42,7 @@ Focus Savings Goal under analysis:
 
     // Prepare system instructions and financial context to ask Gemini for a structured JSON response
     const profileContext = `
-You are MoneyFlow AI, a premium, highly intelligent personal finance analyzer.
+You are Cashtrack AI, a premium, highly intelligent personal finance analyzer.
 Analyze the user's current monthly financial profile:
 - Preferred Currency: ${currency}
 - Transactions (last 30): ${JSON.stringify(transactions.slice(0, 30))}

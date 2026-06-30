@@ -231,7 +231,7 @@ export default function ReportsPage() {
       doc.setFont(fontName, "bold");
       doc.setFontSize(22);
       doc.setTextColor(79, 70, 229); // Amber 600
-      doc.text("MoneyFlow AI", 14, 20);
+      doc.text("Cashtrack AI", 14, 20);
 
       doc.setFont(fontName, "normal");
       doc.setFontSize(10);
@@ -384,7 +384,7 @@ export default function ReportsPage() {
       }
     }
 
-    doc.save(`MoneyFlow_Report_${monthName.replace(/\s+/g, "_")}.pdf`);
+    doc.save(`Cashtrack_Report_${monthName.replace(/\s+/g, "_")}.pdf`);
   } catch (err: any) {
     console.error("PDF Export failed:", err);
     alert(`PDF Export failed: ${err.message || err}`);
@@ -436,7 +436,7 @@ export default function ReportsPage() {
     const wsGoals = XLSX.utils.json_to_sheet(goalsRows);
     XLSX.utils.book_append_sheet(wb, wsGoals, "Savings Goals");
 
-    XLSX.writeFile(wb, `MoneyFlow_Report_${monthLabel}.xlsx`);
+    XLSX.writeFile(wb, `Cashtrack_Report_${monthLabel}.xlsx`);
   };
 
   // CSV Export
@@ -455,7 +455,7 @@ export default function ReportsPage() {
     const encodedUri = encodeURI(csvContent);
     const link = document.createElement("a");
     link.setAttribute("href", encodedUri);
-    link.setAttribute("download", `MoneyFlow_Transactions_${monthLabel}.csv`);
+    link.setAttribute("download", `Cashtrack_Transactions_${monthLabel}.csv`);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
