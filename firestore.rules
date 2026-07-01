@@ -1,27 +1,39 @@
 rules_version = '2';
+
 service cloud.firestore {
   match /databases/{database}/documents {
-    // Helper function to check if the user is authenticated
-    function isAuthenticated() {
-      return request.auth != null;
-    }
 
-    // Helper function to check if the user is accessing their own data
-    function isOwner(userId) {
-      return isAuthenticated() && request.auth.uid == userId;
-    }
-
-    // Users can read/write their own user document
+    // Users collection: only the authenticated user can read/write their own data
     match /users/{userId} {
-      allow read, write: if isOwner(userId);
-    }
-    
-    // Users can read/write their own nested collections
-    match /users/{userId}/{document=**} {
-      allow read, write: if isOwner(userId);
+      allow read, write: if request.auth != null && request.auth.uid == userId;
     }
 
-    // Default deny for everything else
+    // Transactions: only the owner can read/write
+    match /users/{userId}/transactions/{transactionId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // Budgets: only the owner can read/write
+    match /users/{userId}/budgets/{budgetId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // Savings Goals: only the owner can read/write
+    match /users/{userId}/goals/{goalId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // Notifications: only the owner can read/write
+    match /users/{userId}/notifications/{notificationId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // AI Insights: only the owner can read/write
+    match /users/{userId}/aiInsights/{insightId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // Deny all other access
     match /{document=**} {
       allow read, write: if false;
     }

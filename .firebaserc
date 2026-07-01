@@ -1,5 +1,5 @@
 {
   "projects": {
-    "default": "cashtrack-28438"
+    "default": "YOUR_FIREBASE_PROJECT_ID"
   }
 }
